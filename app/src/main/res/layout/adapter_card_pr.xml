@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/pullCard"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160sp">
+
+    <TextView
+        android:id="@+id/pullCardTitle"
+        android:layout_width="0dp"
+        android:textColor="@color/title_card"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/repo_card_margin_horizontal"
+        android:layout_marginStart="@dimen/repo_card_title_margin_start"
+        android:layout_marginTop="@dimen/repo_card_title_margin_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pullCardDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/repo_card_margin_vertical"
+        android:layout_marginEnd="@dimen/repo_card_margin_horizontal"
+        android:layout_marginStart="@dimen/repo_card_desc_margin_start"
+        android:maxLines="2"
+        android:minLines="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pullCardTitle" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/pullCardPhoto"
+        android:layout_width="@dimen/repo_card_photo_size"
+        android:layout_height="@dimen/repo_card_photo_size"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="@dimen/repo_card_icon_margin_start"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pullCardDescription" />
+
+    <TextView
+        android:id="@+id/pullCardName"
+        android:textColor="@color/title_card"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/repo_card_margin_horizontal"
+        android:layout_marginStart="@dimen/repo_card_margin_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/pullCardPhoto"
+        app:layout_constraintTop_toTopOf="@+id/pullCardPhoto" />
+
+    <TextView
+        android:id="@+id/pullCardFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/repo_card_margin_horizontal"
+        android:layout_marginEnd="@dimen/repo_card_margin_horizontal"
+        android:layout_marginStart="@dimen/repo_card_margin_horizontal"
+        android:layout_marginTop="@dimen/repo_card_margin_horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/pullCardPhoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/pullCardPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/pullCardName" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/repo_card_view_margin_start"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

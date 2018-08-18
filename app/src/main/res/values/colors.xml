@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2b3137</color>
+    <color name="colorPrimaryDark">#24292e</color>
+    <color name="colorAccent">#2dba4e</color>
+
+    <color name="load_color">#60000000</color>
+    <color name="toolbar_color">#FFFFFF</color>
+    <color name="title_card">#2b5a88</color>
+    <color name="icons_color">#f0d233</color>
+</resources>

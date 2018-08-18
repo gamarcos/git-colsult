@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Repositories Card-->
+    <dimen name="repo_card_margin_horizontal">8dp</dimen>
+    <dimen name="repo_card_margin_vertical">8dp</dimen>
+    <dimen name="repo_card_title_margin_top">16dp</dimen>
+    <dimen name="repo_card_title_margin_start">16dp</dimen>
+    <dimen name="repo_card_name_margin_start">16dp</dimen>
+    <dimen name="repo_card_desc_margin_start">16dp</dimen>
+    <dimen name="repo_card_icon_margin_start">16dp</dimen>
+    <dimen name="repo_card_icon_width">30dp</dimen>
+    <dimen name="repo_card_icon_height">30dp</dimen>
+    <dimen name="repo_card_photo_size">50dp</dimen>
+    <dimen name="repo_card_view_margin_start">16dp</dimen>
+
+</resources>
