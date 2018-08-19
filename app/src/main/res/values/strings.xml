@@ -7,5 +7,7 @@
     <string name="pullRequest">Pull Request</string>
     <string name="gitHub">GitHub</string>
 
-    <string name="errorRequest">OPS! Algo deu errado, por favor tente mais tarde.</string>
+    <string name="errorRequest">OPS! Something went wrong, please try again later.</string>
+    
+    <string name="search">Search</string>
 </resources>

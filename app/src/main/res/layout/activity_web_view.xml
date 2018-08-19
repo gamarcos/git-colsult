@@ -23,14 +23,14 @@
             <ImageView
                 android:layout_gravity="center"
                 android:id="@+id/iconBackWeb"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="@dimen/toolbar_icon_size"
+                android:layout_height="@dimen/toolbar_icon_size"
                 android:src="@drawable/ic_arrow" />
 
             <TextView
                 android:layout_gravity="center"
                 android:layout_marginStart="@dimen/repo_card_margin_horizontal"
-                android:textSize="20sp"
+                android:textSize="@dimen/toolbar_text_size"
                 android:textColor="@color/toolbar_color"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -17,8 +17,8 @@ class GitUserService(context: Context): BaseService(context) {
     }
 
     fun getUser(user: String,
-                   successCallback: (response: GitUserModel) -> Unit,
-                   errorCallback: () -> Unit){
+                successCallback: (response: GitUserModel) -> Unit,
+                errorCallback: () -> Unit){
 
         observable = gitRepoService.getUserName(user)
                 .subscribeOn(Schedulers.io())

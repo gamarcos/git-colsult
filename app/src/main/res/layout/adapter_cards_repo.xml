@@ -11,7 +11,7 @@
         android:id="@+id/repoCardTitle"
         android:textColor="@color/title_card"
         android:textStyle="bold"
-        android:textSize="17sp"
+        android:textSize="@dimen/title_text_size"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/repo_card_title_margin_top"

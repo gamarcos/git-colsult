@@ -13,14 +13,73 @@
         tools:context=".views.MainActivity">
 
         <android.support.v7.widget.Toolbar
-            android:id="@+id/repotoolbar"
+            android:id="@+id/repoToolbar"
             android:background="@color/colorPrimary"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:elevation="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/repoTitleToolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/repo_card_margin_vertical"
+                    android:text="@string/repositories"
+                    android:textColor="@color/toolbar_color"
+                    android:textSize="@dimen/toolbar_text_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/repoSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:hint="@string/search"
+                    android:visibility="invisible"
+                    android:textColorHint="@color/toolbar_color"
+                    android:textColor="@color/toolbar_color"
+                    android:layout_marginEnd="@dimen/repo_card_margin_vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/repoIconShowFilter"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/repoIconCloseFilter"
+                    android:layout_width="@dimen/toolbar_icon_size"
+                    android:layout_height="@dimen/toolbar_icon_size"
+                    android:visibility="invisible"
+                    android:layout_marginEnd="@dimen/repo_card_margin_vertical"
+                    android:src="@drawable/ic_close"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/repoIconShowFilter"
+                    android:layout_width="@dimen/toolbar_icon_size"
+                    android:layout_height="@dimen/toolbar_icon_size"
+                    android:layout_marginEnd="@dimen/repo_card_margin_vertical"
+                    android:src="@drawable/ic_finder"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.Toolbar>
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/repositoriesList"
@@ -29,7 +88,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/repotoolbar" />
+            app:layout_constraintTop_toBottomOf="@+id/repoToolbar" />
 
         <include
             layout="@layout/layout_view_load"
